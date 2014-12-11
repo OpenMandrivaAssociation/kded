@@ -40,13 +40,14 @@ Development files for the KDE Frameworks 5 service daemon
 
 %prep
 %setup -q
-%cmake -G Ninja
+%cmake -G Ninja \
+	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %build
 ninja -C build
 
 %install
-DESTDIR="%{buildroot}" ninja -C build install %{?_smp_mflags}
+DESTDIR="%{buildroot}" ninja -C build install
 
 %files
 %{_bindir}/kded5
