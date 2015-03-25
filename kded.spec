@@ -3,7 +3,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: kded
-Version: 5.7.0
+Version: 5.8.0
 Release: 1
 Source0: http://ftp5.gwdg.de/pub/linux/kde/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Source100: %{name}.rpmlintrc
@@ -28,7 +28,7 @@ BuildRequires: cmake(KF5Service)
 BuildRequires: ninja
 
 %description
-Extensible deamon for providing system level services
+Extensible deamon for providing system level services.
 
 %package devel
 Summary: Development files for the KDE Frameworks 5 service daemon
@@ -36,7 +36,7 @@ Group: Development/KDE and Qt
 Requires: %{name} = %{EVRD}
 
 %description devel
-Development files for the KDE Frameworks 5 service daemon
+Development files for the KDE Frameworks 5 service daemon.
 
 %prep
 %setup -q
