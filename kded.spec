@@ -53,6 +53,7 @@ Development files for the KDE Frameworks 5 service daemon.
 %{_datadir}/dbus-1/*/*
 %{_libdir}/libkdeinit5_kded5.so
 %{_mandir}/man8/*
+%lang(ca) %{_mandir}/ca/man8/*
 %lang(it) %{_mandir}/it/man8/*
 %lang(nl) %{_mandir}/nl/man8/*
 %lang(pt_BR) %{_mandir}/pt_BR/man8/*
