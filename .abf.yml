@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kded-5.13.0.tar.xz: 1cba8760bfdf7faa740f0bf0ed3b3a2ce3f1258a
+sources:
+  kded-5.14.0.tar.xz: 3576ddcd8180817a6d47a839ed565c8dbd0cbf1d
