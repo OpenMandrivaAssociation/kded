@@ -3,7 +3,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: kded
-Version:	5.30.0
+Version:	5.31.0
 Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Source100: %{name}.rpmlintrc
@@ -55,6 +55,7 @@ Development files for the KDE Frameworks 5 service daemon.
 %{_mandir}/man8/*
 %lang(ca) %{_mandir}/ca/man8/*
 %lang(de) %{_mandir}/de/man8/*
+%lang(es) %{_mandir}/es/man8/*
 %lang(it) %{_mandir}/it/man8/*
 %lang(nl) %{_mandir}/nl/man8/*
 %lang(pt_BR) %{_mandir}/pt_BR/man8/*
