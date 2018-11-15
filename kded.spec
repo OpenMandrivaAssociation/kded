@@ -6,8 +6,8 @@
 %global optflags %{optflags} -O3
 
 Name: kded
-Version:	5.51.0
-Release:	2
+Version:	5.52.0
+Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Source100: %{name}.rpmlintrc
 Summary: Extensible deamon for providing system level services
@@ -49,23 +49,15 @@ Development files for the KDE Frameworks 5 service daemon.
 
 %install
 %ninja_install -C build
+%find_lang %{name} --all-name --with-man
 
-%files
+%files -f %{name}.lang
+%{_sysconfdir}/xdg/*.categories
 %{_bindir}/kded5
 %{_datadir}/kservicetypes5/*
 %{_datadir}/dbus-1/*/*
 %{_libdir}/libkdeinit5_kded5.so
 %{_mandir}/man8/*
-%lang(ca) %{_mandir}/ca/man8/*
-%lang(de) %{_mandir}/de/man8/*
-%lang(es) %{_mandir}/es/man8/*
-%lang(it) %{_mandir}/it/man8/*
-%lang(nl) %{_mandir}/nl/man8/*
-%lang(pt) %{_mandir}/pt/man8/*
-%lang(pt_BR) %{_mandir}/pt_BR/man8/*
-%lang(ru) %{_mandir}/ru/man8/*
-%lang(sv) %{_mandir}/sv/man8/*
-%lang(uk) %{_mandir}/uk/man8/*
 
 %files devel
 %{_libdir}/cmake/KDED
