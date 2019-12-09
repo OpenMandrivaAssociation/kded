@@ -6,7 +6,7 @@
 %global optflags %{optflags} -O3
 
 Name: kded
-Version:	5.64.0
+Version:	5.65.0
 Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Source100: %{name}.rpmlintrc
@@ -57,7 +57,6 @@ Development files for the KDE Frameworks 5 service daemon.
 %{_datadir}/kservicetypes5/*
 %{_datadir}/applications/org.kde.kded5.desktop
 %{_datadir}/dbus-1/*/*
-%{_libdir}/libkdeinit5_kded5.so
 %{_mandir}/man8/*
 
 %files devel
