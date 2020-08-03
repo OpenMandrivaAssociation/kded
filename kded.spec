@@ -6,7 +6,7 @@
 %global optflags %{optflags} -O3
 
 Name: kded
-Version:	5.72.0
+Version:	5.73.0
 Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Source100: %{name}.rpmlintrc
@@ -52,7 +52,7 @@ Development files for the KDE Frameworks 5 service daemon.
 %find_lang %{name} --all-name --with-man
 
 %files -f %{name}.lang
-%{_datadir}/qlogging-categories5/*.categories
+%{_datadir}/qlogging-categories5/*.*categories
 %{_bindir}/kded5
 %{_datadir}/kservicetypes5/*
 %{_datadir}/applications/org.kde.kded5.desktop
