@@ -5,7 +5,7 @@
 %global optflags %{optflags} -O3
 
 Name: kded
-Version:	5.91.0
+Version:	5.92.0
 Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Source100: %{name}.rpmlintrc
