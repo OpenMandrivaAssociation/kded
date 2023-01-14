@@ -5,8 +5,8 @@
 %global optflags %{optflags} -O3
 
 Name: kded
-Version:	5.101.0
-Release:	2
+Version:	5.102.0
+Release:	1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Source100: %{name}.rpmlintrc
 Summary: Extensible deamon for providing system level services
